@@ -1,0 +1,87 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Eventful Script",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#discord-emotes"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#storage"
+		},
+		{
+			"include": "#support"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.eventful-script",
+					"match": "\\b(Process|Transition|Start|End)\\b"
+				}
+			]
+		},
+		"support": {
+			"patterns": [
+				{
+					"name": "support.class.eventful-script",
+					"match": "\\b(Actions)\\b"
+				},
+				{
+					"name": "support.function.eventful-script",
+					"match": "\\b(Message|DM|Select|Delay|React)\\b"
+				},
+				{
+					"name": "support.function.eventful-script",
+					"match": "--\\w+\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.eventful-script",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.eventful-script",
+					"match": "\\\\."
+				}
+			]
+		},
+		"discord-emotes": {
+			"patterns": [
+				{
+					"name": "string.interpolated.eventful-script",
+					"match": ":(\\w)+:"
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.number-sign.eventful-script",
+			"begin": "#",
+			"end": "\n"
+		},
+		"storage": {
+			"patterns": [
+				{
+					"name": "storage.type.eventful-script",
+					"match": "\\b(Reaction|String|User|Duration)\\b"
+				},
+				{
+					"name": "storage.modifier.eventful-script",
+					"match": "\\b(Default)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.eventful"
+}

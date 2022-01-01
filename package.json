@@ -1,0 +1,25 @@
+{
+    "name": "eventful-script",
+    "displayName": "Eventful Script",
+    "description": "Syntax highlighting for eventful script intended for the Eventful discord bot",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "eventful-script",
+            "aliases": ["Eventful Script", "eventful-script"],
+            "extensions": [".eventful"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "eventful-script",
+            "scopeName": "source.eventful",
+            "path": "./syntaxes/eventful-script.tmLanguage.json"
+        }]
+    }
+}
