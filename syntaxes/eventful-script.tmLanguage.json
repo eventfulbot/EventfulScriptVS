@@ -9,6 +9,9 @@
 			"include": "#strings"
 		},
 		{
+			"include": "#labels"
+		},
+		{
 			"include": "#discord-emotes"
 		},
 		{
@@ -38,7 +41,7 @@
 				},
 				{
 					"name": "support.function.eventful-script",
-					"match": "\\b(Message|DM|Select|Delay|React)\\b"
+					"match": "\\b(PostMessage|DM|Select|Delay|React)\\b"
 				},
 				{
 					"name": "support.function.eventful-script",
@@ -56,6 +59,11 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"labels": {
+			"name": "string.quoted.other.eventful-script",
+			"begin": "`",
+			"end": "`"
 		},
 		"discord-emotes": {
 			"patterns": [
