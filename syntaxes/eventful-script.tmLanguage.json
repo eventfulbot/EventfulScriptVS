@@ -15,7 +15,16 @@
 			"include": "#discord-emotes"
 		},
 		{
+			"include": "#script-information"
+		},
+		{
 			"include": "#comments"
+		},
+		{
+			"include": "#entities"
+		},
+		{
+			"include": "#constants"
 		},
 		{
 			"include": "#storage"
@@ -29,7 +38,19 @@
 			"patterns": [
 				{
 					"name": "keyword.control.eventful-script",
-					"match": "\\b(Process|Transition|Start|End)\\b"
+					"match": "\\b(If|Else|Actions)\\b"
+				},
+				{
+					"name": "keyword.operator.eventful-script",
+					"match": "\\b(Is)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.eventful-script",
+					"match": "\\b(None)\\b"
 				}
 			]
 		},
@@ -37,11 +58,11 @@
 			"patterns": [
 				{
 					"name": "support.class.eventful-script",
-					"match": "\\b(Actions)\\b"
+					"match": "\\b(Process|Transition|Start|End)\\b"
 				},
 				{
 					"name": "support.function.eventful-script",
-					"match": "\\b(PostMessage|DM|Select|Delay|React)\\b"
+					"match": "\\b(PostMessage|DM|Select|Delay|React|Restrict)\\b"
 				},
 				{
 					"name": "support.function.eventful-script",
@@ -59,6 +80,11 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"script-information": {
+			"name": "comment.block.eventful-script",
+			"begin": "=`",
+			"end": "`"
 		},
 		"labels": {
 			"name": "string.quoted.other.eventful-script",
@@ -82,7 +108,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.eventful-script",
-					"match": "\\b(Reaction|String|User|Duration)\\b"
+					"match": "\\b(Reaction|String|User|Duration|Channel)\\b"
 				},
 				{
 					"name": "storage.modifier.eventful-script",
