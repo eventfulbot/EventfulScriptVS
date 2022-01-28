@@ -38,11 +38,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.eventful-script",
-					"match": "\\b(If|Else|Actions)\\b"
-				},
-				{
-					"name": "keyword.operator.eventful-script",
-					"match": "\\b(Is)\\b"
+					"match": "\\b(If|Else|Actions|Is)\\b"
 				}
 			]
 		},
@@ -62,7 +58,7 @@
 				},
 				{
 					"name": "support.function.eventful-script",
-					"match": "\\b(PostMessage|DM|Select|Delay|React|Restrict)\\b"
+					"match": "\\b(PostMessage|DM|Select|Delay|React|Restrict|CreateButton|StartProcesses|Collect|Disable)\\b"
 				},
 				{
 					"name": "support.function.eventful-script",
@@ -108,7 +104,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.eventful-script",
-					"match": "\\b(Reaction|String|User|Duration|Channel)\\b"
+					"match": "\\b(Reaction|String|User|Duration|Channel|Button)\\b"
 				},
 				{
 					"name": "storage.modifier.eventful-script",

@@ -2,7 +2,7 @@
     "name": "eventful-script",
     "displayName": "Eventful Script",
     "description": "Syntax highlighting for eventful script intended for the Eventful discord bot",
-    "version": "0.0.6",
+    "version": "0.1.1",
     "engines": {
         "vscode": "^1.63.0"
     },
